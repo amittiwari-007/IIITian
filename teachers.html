@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+      src="https://kit.fontawesome.com/c0cda04f22.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+    <style>
+    .thod{
+        background-color: #c4c4c4;
+        text-align: center;
+        border-radius: 30px;
+        padding: 1%;
+    }
+ 
+
+.card{
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  margin: 20px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card::before{
+  content: "";
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  background: linear-gradient(180deg, #f5a240 40.04%, #f7d9ac 100%);
+        mix-blend-mode: normal;
+  border-radius: 20px 20px 0 0;
+}
+
+.card .card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+  z-index: 100;
+}
+
+section .card .image{
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #F5A240;
+}
+
+section .card .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.card .media-icons{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card .media-icons i{
+  color: #fff;
+  opacity: 0.6;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card .media-icons i:hover{
+  opacity: 1;
+}
+
+.card .name-profession{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  
+} 
+
+.name-profession .name{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.name-profession .profession{
+  font-size:15px;
+  font-weight: 500;
+}
+
+.card .rating{
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.card .rating i{
+  font-size: 18px;
+  margin: 0 2px;
+  color: #F5A240;
+}
+
+.card .button{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.card .button button{
+  background: #F5A240;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.button button:hover{
+  background: #e28822;
+}
+
+.swiper-pagination{
+  position: absolute;
+}
+.hodflexcont{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.hodflexitem{
+    margin: 3%;
+    height: 350px;
+}
+.amitimg{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.tanyimg{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.teacherflexcont{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.teacherflexitem{
+    margin: 2%;
+    height: 300px;
+    width: 200px;
+}
+</style>
+  
+</head>
+<body>
+    <div class="thod">
+        HODS
+    </div>
+    <div class="swiper mySwiper container">
+    <div class="hodflexcont swiper-wrapper content">
+  
+        <div class="hodflexitem swiper-slide card">
+          <div class="card-content">
+            <div class="image">
+              <img class="amitimg" src="image/kakde.jpeg" alt="">
+            </div>
+
+            <div class="media-icons">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-github"></i>
+            </div>
+
+            <div class="name-profession">
+              <span class="name">O.G. Kakde</span>
+              <span class="profession">Director</span>
+            </div>
+
+
+            <div class="button">
+              <button class="aboutMe">About Me</button>
+              <button class="hireMe">Call me</button>
+            </div>
+          </div>
+        </div>
+        <div class="hodflexitem swiper-slide card">
+          <div class="card-content">
+            <div class="image">
+              <img class="tanyimg" src="image/kothari.jpeg" alt="">
+            </div>
+
+            <div class="media-icons">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-github"></i>
+            </div>
+
+            <div class="name-profession">
+              <span class="name">Dr. Ashwin Kothari</span>
+              <span class="profession">I/c Dean</span>
+            </div>
+
+
+            <div class="button">
+              <button class="aboutMe">About Me</button>
+              <button class="hireMe">Call Me</button>
+            </div>
+          </div>
+       </div>
+       <div class="hodflexitem swiper-slide card">
+        <div class="card-content">
+          <div class="image">
+            <img class="tanyimg" src="image/registrar.png" alt="">
+          </div>
+
+          <div class="media-icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-github"></i>
+          </div>
+
+          <div class="name-profession">
+            <span class="name">Dr. Kailas Dakhale</span>
+            <span class="profession">Registrar</span>
+          </div>
+
+
+
+          <div class="button">
+            <button class="aboutMe">About Me</button>
+            <button class="hireMe">Call Me</button>
+          </div>
+        </div>
+     </div>
+      </div>
+    </div>
+
+<div class="thod">CSE DEPARTMENT</div>
+
+    <div class="swiper mySwiper container">
+        <div class="teacherflexcont swiper-wrapper content">
+      
+            <div class="teacherflexitem swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img class="amitimg" src="image/pooja.jpeg" alt="">
+                </div>
+    
+                <div class="media-icons">
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-github"></i>
+                </div>
+    
+                <div class="name-profession">
+                  <span class="name">Dr. Pooja Jain</span>
+                  <span class="profession">Assistant Professor(CSE)</span>
+                </div>
+    
+                
+    
+                <div class="button">
+                  <button class="aboutMe">About Me</button>
+                  <button class="hireMe">Call me</button>
+                </div>
+              </div>
+            </div>
+            <div class="teacherflexitem swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img class="tanyimg" src="image/jitendra.jpeg" alt="">
+                </div>
+    
+                <div class="media-icons">
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-github"></i>
+                </div>
+    
+                <div class="name-profession">
+                  <span class="name">Dr. Jitendra Tembhurne</span>
+                  <span class="profession">HoD</span>
+                </div>
+    
+                
+    
+                <div class="button">
+                  <button class="aboutMe">About Me</button>
+                  <button class="hireMe">Call Me</button>
+                </div>
+              </div>
+           </div>
+           <div class="teacherflexitem swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img class="tanyimg" src="image/milind.jpeg" alt="">
+              </div>
+    
+              <div class="media-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-github"></i>
+              </div>
+    
+              <div class="name-profession">
+                <span class="name">Dr. Milind R Penurkar</span>
+                <span class="profession">Assistant</span>
+              </div>
+    
+              
+              <div class="button">
+                <button class="aboutMe">About Me</button>
+                <button class="hireMe">Call Me</button>
+              </div>
+            </div>
+         </div>
+         <div class="teacherflexitem swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img class="tanyimg" src="image/khushboo.jpeg" alt="">
+              </div>
+    
+              <div class="media-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-github"></i>
+              </div>
+    
+              <div class="name-profession">
+                <span class="name">Dr. Khushboo Jain</span>
+                <span class="profession">Adjunct Asst. Professor</span>
+              </div>
+    
+              
+    
+              <div class="button">
+                <button class="aboutMe">About Me</button>
+                <button class="hireMe">Call Me</button>
+              </div>
+            </div>
+         </div>
+         <div class="teacherflexitem swiper-slide card">
+            <div class="card-content">
+              <div class="image">
+                <img class="tanyimg" src="image/nidhilal.jpeg" alt="error">
+              </div>
+    
+              <div class="media-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-github"></i>
+              </div>
+    
+              <div class="name-profession">
+                <span class="name">Dr. Nidhi Lal</span>
+                <span class="profession">Assistant Professor</span>
+              </div>
+    
+              
+    
+              <div class="button">
+                <button class="aboutMe">About Me</button>
+                <button class="hireMe">Call Me</button>
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
+          <div class="swiper mySwiper container">
+            <div class="teacherflexcont swiper-wrapper content">
+          
+                <div class="teacherflexitem swiper-slide card">
+                  <div class="card-content">
+                    <div class="image">
+                      <img class="amitimg" src="image/mayuri.jpeg" alt="">
+                    </div>
+        
+                    <div class="media-icons">
+                      <i class="fab fa-facebook"></i>
+                      <i class="fab fa-twitter"></i>
+                      <i class="fab fa-github"></i>
+                    </div>
+        
+                    <div class="name-profession">
+                      <span class="name">Dr. Mayuri Digalwar</span>
+                      <span class="profession">Assistant Professor</span>
+                    </div>
+        
+                   
+                    <div class="button">
+                      <button class="aboutMe">About Me</button>
+                      <button class="hireMe">Call me</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="teacherflexitem swiper-slide card">
+                  <div class="card-content">
+                    <div class="image">
+                      <img class="tanyimg" src="image/tausif.jpeg" alt="">
+                    </div>
+        
+                    <div class="media-icons">
+                      <i class="fab fa-facebook"></i>
+                      <i class="fab fa-twitter"></i>
+                      <i class="fab fa-github"></i>
+                    </div>
+        
+                    <div class="name-profession">
+                      <span class="name">Dr. Tausif Diwan</span>
+                      <span class="profession">Assistant Professor</span>
+                    </div>
+        
+                    
+                    <div class="button">
+                      <button class="aboutMe">About Me</button>
+                      <button class="hireMe">Call Me</button>
+                    </div>
+                  </div>
+               </div>
+               <div class="teacherflexitem swiper-slide card">
+                <div class="card-content">
+                  <div class="image">
+                    <img class="tanyimg" src="image/gaurav.jpeg" alt="">
+                  </div>
+        
+                  <div class="media-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-github"></i>
+                  </div>
+        
+                  <div class="name-profession">
+                    <span class="name">Dr.Gaurav Malode</span>
+                    <span class="profession">Assistant Professor</span>
+                  </div>
+        
+                  
+                  <div class="button">
+                    <button class="aboutMe">About Me</button>
+                    <button class="hireMe">Call Me</button>
+                  </div>
+                </div>
+             </div>
+             <div class="teacherflexitem swiper-slide card">
+                <div class="card-content">
+                  <div class="image">
+                    <img class="tanyimg" src="image/pujagudadhe.jpeg" alt="">
+                  </div>
+        
+                  <div class="media-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-github"></i>
+                  </div>
+        
+                  <div class="name-profession">
+                    <span class="name">Dr. Puja Gudadhe</span>
+                    <span class="profession">Assistant Professor</span>
+                  </div>
+        
+                  
+                  <div class="button">
+                    <button class="aboutMe">About Me</button>
+                    <button class="hireMe">Call Me</button>
+                  </div>
+                </div>
+             </div>
+             <div class="teacherflexitem swiper-slide card">
+                <div class="card-content">
+                  <div class="image">
+                    <img class="tanyimg" src="image/shishupal.jpeg" alt="">
+                  </div>
+        
+                  <div class="media-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-github"></i>
+                  </div>
+        
+                  <div class="name-profession">
+                    <span class="name">Dr. Shishupal Kumar</span>
+                    <span class="profession">Adjunct Assistant Professor</span>
+                  </div>
+        
+                  
+                  <div class="button">
+                    <button class="aboutMe">About Me</button>
+                    <button class="hireMe">Call Me</button>
+                  </div>
+                </div>
+             </div>
+              </div>
+              </div>
+              <br>
+              <br>
+              <div class="thod">ECE DEPARTMENT</div>
+              <br>
+              <div class="swiper mySwiper container">
+                <div class="teacherflexcont swiper-wrapper content">
+              
+                    <div class="teacherflexitem swiper-slide card">
+                      <div class="card-content">
+                        <div class="image">
+                          <img class="amitimg" src="image/tapan.jpeg" alt="">
+                        </div>
+            
+                        <div class="media-icons">
+                          <i class="fab fa-facebook"></i>
+                          <i class="fab fa-twitter"></i>
+                          <i class="fab fa-github"></i>
+                        </div>
+            
+                        <div class="name-profession">
+                          <span class="name">Dr. Tapan K Jain</span>
+                          <span class="profession">Assistant Professor</span>
+                        </div>
+            
+                        
+            
+                        <div class="button">
+                          <button class="aboutMe">About Me</button>
+                          <button class="hireMe">Call me</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="teacherflexitem swiper-slide card">
+                      <div class="card-content">
+                        <div class="image">
+                          <img class="tanyimg" src="image/vipin.jpeg" alt="">
+                        </div>
+            
+                        <div class="media-icons">
+                          <i class="fab fa-facebook"></i>
+                          <i class="fab fa-twitter"></i>
+                          <i class="fab fa-github"></i>
+                        </div>
+            
+                        <div class="name-profession">
+                          <span class="name">Dr.Vipin M. Kamble</span>
+                          <span class="profession">Assistant Professor</span>
+                        </div>
+            
+                        
+            
+                        <div class="button">
+                          <button class="aboutMe">About Me</button>
+                          <button class="hireMe">Call Me</button>
+                        </div>
+                      </div>
+                   </div>
+                   <div class="teacherflexitem swiper-slide card">
+                    <div class="card-content">
+                      <div class="image">
+                        <img class="tanyimg" src="image/prasad.png" alt="">
+                      </div>
+            
+                      <div class="media-icons">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-github"></i>
+                      </div>
+            
+                      <div class="name-profession">
+                        <span class="name">Dr. Prasad Joshi</span>
+                        <span class="profession">Assistant Professor</span>
+                      </div>
+            
+
+            
+                      <div class="button">
+                        <button class="aboutMe">About Me</button>
+                        <button class="hireMe">Call Me</button>
+                      </div>
+                    </div>
+                 </div>
+                 <div class="teacherflexitem swiper-slide card">
+                    <div class="card-content">
+                      <div class="image">
+                        <img class="tanyimg" src="image/sakode.jpeg" alt="">
+                      </div>
+            
+                      <div class="media-icons">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-github"></i>
+                      </div>
+            
+                      <div class="name-profession">
+                        <span class="name">Dr. Chandrashekhar Sakode</span>
+                        <span class="profession">Assistant Professor</span>
+                      </div>
+            
+            
+                      <div class="button">
+                        <button class="aboutMe">About Me</button>
+                        <button class="hireMe">Call Me</button>
+                      </div>
+                    </div>
+                 </div>
+                 <div class="teacherflexitem swiper-slide card">
+                    <div class="card-content">
+                      <div class="image">
+                        <img class="tanyimg" src="image/paritosh.jpeg" alt="">
+                      </div>
+            
+                      <div class="media-icons">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-github"></i>
+                      </div>
+            
+                      <div class="name-profession">
+                        <span class="name">Paritosh D. Peshwe</span>
+                        <span class="profession">Assistant Professor</span>
+                      </div>
+            
+            
+                      <div class="button">
+                        <button class="aboutMe">About Me</button>
+                        <button class="hireMe">Call Me</button>
+                      </div>
+                    </div>
+                 </div>
+                  </div>
+                  </div>
+</body>
+</html>
